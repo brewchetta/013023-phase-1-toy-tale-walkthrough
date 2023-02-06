@@ -47,6 +47,18 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": 1
+    },
+    {
+      "name": "Catburger",
+      "image": "https://i5.walmartimages.com/asr/864abf9f-9fc7-4036-9eeb-5c41e186f40a.f7e52cb2c93c2c5f29cb21a260a8a2ad.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "likes": 0,
+      "id": 9
+    },
+    {
+      "name": "Lego Bowser",
+      "image": "https://cdn.shopify.com/s/files/1/2138/8145/products/71411-LEGO-SuperMarioTheMightyBowser-hero-pose-Light-My-Bricks_550x550_crop_center.jpg?v=1665013119",
+      "likes": 0,
+      "id": 10
     }
   ]
 }

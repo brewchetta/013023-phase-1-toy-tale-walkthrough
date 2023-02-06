@@ -23,7 +23,6 @@ const toyCollection = document.querySelector('#toy-collection')
 fetch('http://localhost:3000/toys')
   .then( response => response.json() )
   .then( data => {
-    console.log(data)
     data.forEach( toy => addToyElement(toy) )
   } )
 
@@ -65,5 +64,15 @@ form.addEventListener('submit', event => {
     likes: 0
   }
 
-  addToyElement(newToy)
+  fetch('http://localhost:3000/toys', {
+    method: 'post',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    body: JSON.stringify(newToy)
+  })
+    .then( res => res.json() )
+    .then( newToyData => addToyElement(newToyData) )
+
 } )
